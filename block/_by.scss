@@ -1,0 +1,78 @@
+.by {
+width: 100%;
+height: 100%;
+position: fixed;
+z-index: 99;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-radius: 8px;
+background-color: #000;
+animation: hideAfter2s 2s ease forwards;
+}
+
+.project_name {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+
+  background: linear-gradient(to left, #00FF00, #00FFFF);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMoveLeft 3s linear infinite;
+}
+
+.creater_name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+
+  background: linear-gradient(to right, #00FF00, #00FFFF);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMoveRight 3s linear infinite;
+}
+
+@keyframes gradientMoveLeft {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes gradientMoveRight {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+
+@keyframes hideAfter2s {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  66% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

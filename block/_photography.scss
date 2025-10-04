@@ -1,0 +1,114 @@
+.photography_wrapper{
+width: 100%;
+height: 414px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.photography{
+width: 600px;
+height: 186px;
+margin: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+
+&_text1{
+width: 571px;
+height: 84px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 42px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+&_text2{
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+
+color: #C0C0C0;
+
+}
+
+&_btn{
+width: 154px;
+height: 42px;
+background-color: #fff;
+border-radius: 5px;
+display: flex;
+align-items: center;
+
+&:hover &_div{
+margin-left: 114px;
+transition: all ease-in-out 1s; 
+}
+
+&:hover &_text{
+margin-left: 10px;
+transition: all ease-in-out 1s; 
+}
+
+& &_div{
+transition: all ease 1s;
+}
+
+& &_text{
+transition: all ease 1s;
+}
+
+&{
+transition: all ease 1s;
+}
+
+&:active{
+background: #000;
+border: 2px solid wheat;
+
+}
+
+&:active &_div{
+background: #ffffff;
+}
+
+&:active &_text{
+color: #fff;
+}
+
+&_div{
+width: 32px;
+height: 32px;
+position: absolute;
+background: #000;
+border-radius: 6px;
+margin-left: 8px;
+}
+
+&_text{
+position: absolute;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+letter-spacing: 0.4px;
+margin-left: 44px;
+
+color: #000000;
+
+}
+}
+}
